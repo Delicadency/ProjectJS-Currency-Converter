@@ -2,8 +2,11 @@
   --text: #14050f;
   --background: #fefafc;
   --primary: #ce3c98;
+  --primary-alfa: #ce3c98a4;
   --secondary: #97e5b3;
+  --secondary-alfa: #97e5b4a4;
   --accent: #63b1d8;
+  --accent-alfa: #63b1d8a4;
   scroll-behavior: smooth;
 }
 body {
@@ -21,5 +24,9 @@ body {
   width: 1024px;
   height: 600px;
   border-radius: 2%;
-  background-image: linear-gradient(45deg, var(--secondary), var(--accent));
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-alfa),
+    var(--accent-alfa)
+  );
 }

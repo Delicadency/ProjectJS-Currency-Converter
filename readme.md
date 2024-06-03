@@ -1,0 +1,2 @@
+Using the free API from the NBP website (https://api.nbp.pl/?ref=public-apis), a simple currency converter should be created that takes into account the following currencies: euros, US dollars, and Swiss francs. The application should allow for the conversion of the selected currency into Polish zloty. The exchange rate for the given currency should be taken as the latest one (from the current day).
+

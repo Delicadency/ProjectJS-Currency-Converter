@@ -1,0 +1,15 @@
+:root {
+  --text: #14050f;
+  --background: #fefafc;
+  --primary: #ce3c98;
+  --secondary: #97e5b3;
+  --accent: #63b1d8;
+  scroll-behavior: smooth;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box;
+    line-height: 21px;
+    background-color: var(--background);
+    color: var(--text);
+}

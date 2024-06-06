@@ -97,6 +97,33 @@ body {
   font-size: 1.2rem;
   margin: 0;
 }
+.input__container {
+  width: 30vh;
+  height: 6vh;
+  background-color: var(--light);
+  border-radius: 2vh;
+  border: var(--light) 0.3vh solid;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 30vh;
+  height: 6hv;
+  border: none;
+  outline: none;
+  caret-color: var(--accent);
+  background-color: var(--light);
+  border-radius: 2vh;
+  letter-spacing: 0.8px;
+  color: var(--accent);
+  font-size: 1.6rem;
+  text-align: center;
+}
+.input::placeholder {
+  color: var(--accent);
+  font-variant: small-caps;
+}
 
 @media (min-width: 1024px) {
   body {

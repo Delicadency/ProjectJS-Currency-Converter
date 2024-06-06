@@ -12,6 +12,7 @@
 body {
   font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
+  font-size: 20px;
   line-height: 21px;
   background-color: black;
   color: var(--text);
@@ -27,7 +28,8 @@ body {
   position: relative;
   border-radius: 20px;
   border: 3px solid transparent;
-  background-image: linear-gradient(#fcfcfd, #fcfcfd), linear-gradient(to bottom, #E8504F 80%, #EE80A7 90%, #5A04C8 100%);
+  background-image: linear-gradient(#fcfcfd, #fcfcfd),
+    linear-gradient(to bottom, #e8504f 80%, #ee80a7 90%, #5a04c8 100%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -39,7 +41,48 @@ body {
   border-radius: 0 0 20px 20px;
   position: absolute;
 }
+.container__header {
+  width: 320px;
+  height: 100px;
+  margin-top: 62px;
+}
 
+.logo--placeholder {
+  width: 73px;
+  height: 62px;
+  margin: 20px;
+  background-color: #f3eaff;
+}
+
+.app-name {
+  width: 200px;
+  color: var(--light);
+  display: block;
+  font-size: 32px;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  line-height: 1.33;
+  padding-top: 15px;
+}
+.container__buttons {
+  width: 330px;
+  height: 40px;
+  margin: 80px 0;
+}
+
+.button__currency {
+  width: 110px;
+  height: 40px;
+  background-color: var(--primary-shade);
+}
+
+.button__currency:first-of-type {
+  border-radius: 20px 0 0 20px;
+}
+
+.button__currency:last-of-type {
+  border-radius: 0 20px 20px 0;
+}
 
 @media (min-width: 1024px) {
   body {

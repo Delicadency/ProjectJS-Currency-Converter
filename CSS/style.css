@@ -6,28 +6,30 @@
   --primary-shade: #923dff;
   --secondary: #ee80a7;
   --accent: #e8504f;
-
+  font-size: 2vh;
   scroll-behavior: smooth;
+  /* 1vh = 10 px = 0.5rem */
 }
+
 body {
   font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
-  font-size: 20px;
-  line-height: 21px;
-  background-color: black;
-  color: var(--text);
+  line-height: 2.1vh;
+  background-color: var(--text);
 }
+
 .main-container {
   width: 100%;
   height: 100vh;
 }
+
 .project-body__container--light {
   width: 100%;
   height: 100vh;
   background-color: var(--light);
   position: relative;
-  border-radius: 20px;
-  border: 3px solid transparent;
+  border-radius: 2vh;
+  border: 0.3vh solid transparent;
   background-image: linear-gradient(#fcfcfd, #fcfcfd),
     linear-gradient(to bottom, #e8504f 80%, #ee80a7 90%, #5a04c8 100%);
   background-origin: border-box;
@@ -38,50 +40,56 @@ body {
   width: 100%;
   height: 75vh;
   background-color: var(--primary);
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 2vh 2vh;
   position: absolute;
 }
+
 .header__container {
-  width: 320px;
-  height: 100px;
-  margin-top: 62px;
+  width: 32vh;
+  height: 10vh;
+  margin-top: 6.2vh;
 }
 
 .header__logo--placeholder {
-  width: 73px;
-  height: 62px;
-  margin: 20px;
+  width: 7.3vh;
+  height: 6.2vh;
+  margin: 2vh;
   background-color: #f3eaff;
 }
 
 .header__paragraph {
-  width: 200px;
+  width: 20vh;
   color: var(--light);
   display: block;
-  font-size: 32px;
+  font-size: 3.2vh;
   font-variant: small-caps;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   line-height: 1.33;
-  padding-top: 15px;
+  padding-top: 1.5vh;
 }
+
 .bar {
-  width: 330px;
-  height: 40px;
-  margin: 80px 0;
+  width: 33vh;
+  height: 4vh;
+  margin: 8vh 0;
 }
 
 .bar__button {
-  width: 110px;
-  height: 40px;
+  width: 11vh;
+  height: 4vh;
   background-color: var(--primary-shade);
 }
 
 .bar__button:first-of-type {
-  border-radius: 20px 0 0 20px;
+  border-radius: 2vh 0 0 2vh;
 }
 
 .bar__button:last-of-type {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 2vh 2vh 0;
+}
+
+.bar__button-paragraph {
+  font-size: 1.2rem;
 }
 
 @media (min-width: 1024px) {

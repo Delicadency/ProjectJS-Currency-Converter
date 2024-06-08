@@ -50,11 +50,10 @@ body {
   margin-top: 10vh;
 }
 
-.header__logo--placeholder {
-  width: 8.4vh;
-  height: 9.1vh;
-  margin: 2vh;
-  background-color: #f3eaff;
+.header__logo {
+  width: 9vh;
+  height: 9.5vh;
+  margin: 1vh;
 }
 
 .header__paragraph {
@@ -154,18 +153,18 @@ body {
   margin: 0;
   letter-spacing: 0.8px;
 }
-.output__container{
-width: 43vh;
-height: 12vh;
-margin: 5vh 0;
+.output__container {
+  width: 43vh;
+  height: 12vh;
+  margin: 5vh 0;
 }
 .output__paragraph--value {
   height: 10vh;
   font-size: 3.2rem;
   color: var(--text);
-  margin:0;
+  margin: 0;
 }
-.output__paragraph--currency{
+.output__paragraph--currency {
   height: 10vh;
   font-size: 1.6rem;
   font-weight: 200;

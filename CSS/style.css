@@ -6,14 +6,14 @@
   --primary-shade: #923dff;
   --secondary: #ee80a7;
   --accent: #e8504f;
-  font-size: 2vh;
-  scroll-behavior: smooth;
+  font-size: 2.2vh;
   /* 1vh = 10 px = 0.5rem */
+  scroll-behavior: smooth;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
-  box-sizing: border-box;
   line-height: 2.1vh;
   background-color: var(--text);
   color: var(--light);
@@ -48,7 +48,7 @@ body {
 .header__container {
   width: 32vh;
   height: 10vh;
-  margin-top: 6.2vh;
+  margin-top: 10vh;
 }
 
 .header__logo--placeholder {
@@ -61,9 +61,9 @@ body {
 .header__paragraph {
   width: 20vh;
   display: block;
-  font-size: 3.2vh;
+  font-size: 1.5rem;
   font-variant: small-caps;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   line-height: 1.33;
   padding-top: 1.5vh;
 }
@@ -94,7 +94,7 @@ body {
 }
 
 .bar__button-paragraph {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
 }
 .input__container {
@@ -117,7 +117,7 @@ body {
   border-radius: 2vh;
   letter-spacing: 0.8px;
   color: var(--accent);
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 .input::placeholder {
@@ -125,6 +125,26 @@ body {
   font-variant: small-caps;
 }
 
+.count__container {
+  width: 19vh;
+  height: 6vh;
+  margin-top: 5.5vh;
+}
+.count__button {
+  width: 18.7vh;
+  height: 5.7vh;
+  background-color: var(--accent);
+  border-color: var(--accent);
+  border-width: 0.3vh 0;
+  border-style: solid;
+  border-radius: 2vh;
+}
+.count__paragraph {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.8px;
+}
 @media (min-width: 1024px) {
   body {
     background-color: var(--background);

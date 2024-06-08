@@ -91,7 +91,9 @@ body {
   border-radius: 0 2vh 2vh 0;
   border-width: 0.3vh 0.3vh 0.3vh 0;
 }
-
+.bar__button--active {
+  background-color: var(--secondary);
+}
 .bar__button-paragraph {
   font-size: 1.2rem;
   margin: 0;
@@ -152,6 +154,26 @@ body {
   margin: 0;
   letter-spacing: 0.8px;
 }
+.output__container{
+width: 43vh;
+height: 12vh;
+margin: 5vh 0;
+}
+.output__paragraph--value {
+  height: 10vh;
+  font-size: 3.2rem;
+  color: var(--text);
+  margin:0;
+}
+.output__paragraph--currency{
+  height: 10vh;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--text);
+  margin: 0 1vh;
+  align-self: self-end;
+}
+
 @media (min-width: 1024px) {
   body {
     background-color: var(--background);

@@ -16,69 +16,70 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/desktop.css">
+    <link rel="stylesheet" href="CSS/desktop.css" />
     <title>Przelicznik walut</title>
   </head>
   <body>
-    <div class="main-container d-flex justify-content-center">
+    <div class="main__container d-flex justify-content-center">
       <div
-        class="project-body__container--light d-flex justify-content-center align-items-end"
+        class="d-flex justify-content-center align-items-end project-body__container--light"
       >
         <section
-          class="output__container d-flex justify-content-center align-items-center"
+          class="d-flex justify-content-center align-items-center output__container"
         >
           <p class="output__paragraph--value">0,00</p>
           <p class="output__paragraph--currency">PLN</p>
         </section>
       </div>
       <div
-        class="project-body__container d-flex container-fluid flex-column align-items-center"
+        class="d-flex container-fluid flex-column align-items-center project-body__container"
       >
         <header
-          class="header__container d-flex align-items-center justify-content-center"
+          class="d-flex align-items-center justify-content-center header__container"
         >
           <img src="img/logo.png" alt="piggybank logo" class="header__logo" />
           <p class="header__paragraph">Przelicznik Walut</p>
         </header>
-        <section class="bar d-flex align-items-center justify-content-center">
+
+        <section class="d-flex align-items-center justify-content-center bar">
           <div
-            class="bar__button d-flex align-items-center justify-content-center"
+            class="d-flex align-items-center justify-content-center bar__button"
           >
             <p class="bar__button-paragraph">USD</p>
           </div>
           <div
-            class="bar__button d-flex align-items-center justify-content-center"
+            class="d-flex align-items-center justify-content-center bar__button"
           >
             <p class="bar__button-paragraph">EUR</p>
           </div>
           <div
-            class="bar__button d-flex align-items-center justify-content-center"
+            class="d-flex align-items-center justify-content-center bar__button"
           >
             <p class="bar__button-paragraph">CHF</p>
           </div>
         </section>
-        <section
-          class="input__container d-flex align-items-center justify-content-center"
-        >
-          <input
-            placeholder="Wpisz kwotę"
-            id="input"
-            class="input"
-            inputmode="numeric"
-            type="number"
-          />
-          <div
-            class="input__button d-flex align-items-center justify-content-center"
-          ></div>
-        </section>
-        <section
-          class="count__container d-flex align-items-center justify-content-center"
-        >
-          <div
-            class="count__button d-flex align-items-center justify-content-center"
+        <section class="section__container d-flex justify-content-between align-items-center">
+          <section
+            class="d-flex align-items-center justify-content-center input__container"
           >
-            <p class="count__paragraph">PRZELICZ</p>
-          </div>
+            <input
+              placeholder="Wpisz kwotę"
+              id="input"
+              class="input"
+              inputmode="numeric"
+              type="number"
+            />
+            <div class="d-flex align-items-center justify-content-center"></div>
+          </section>
+          <section
+            class="count__container d-flex align-items-center justify-content-center input__button"
+          >
+            <div
+              class="d-flex align-items-center justify-content-center count__button"
+            >
+              <p class="count__paragraph">PRZELICZ</p>
+            </div>
+          </section>
         </section>
       </div>
     </div>

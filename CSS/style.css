@@ -18,7 +18,7 @@ body {
   color: var(--light);
 }
 
-.main-container {
+.main__container {
   width: 100%;
   height: 100vh;
 }
@@ -132,7 +132,6 @@ body {
   color: var(--accent);
   font-variant: small-caps;
 }
-
 .count__container {
   width: 19vh;
   height: 6vh;
@@ -174,13 +173,3 @@ body {
   align-self: self-end;
 }
 
-@media (min-width: 1024px) {
-  body {
-    background-color: var(--background);
-  }
-  .container__project-body {
-    width: 1024px;
-    height: 600px;
-    border-radius: 20px;
-  }
-}

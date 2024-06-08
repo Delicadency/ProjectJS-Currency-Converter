@@ -20,7 +20,9 @@
   </head>
   <body>
     <div class="main-container d-flex justify-content-center">
-      <div class="project-body__container--light"></div>
+      <div class="project-body__container--light">
+        <section class="output"></section>
+      </div>
       <div
         class="project-body__container d-flex container-fluid flex-column align-items-center"
       >
@@ -30,7 +32,7 @@
           <div class="header__logo--placeholder"></div>
           <p class="header__paragraph">Przelicznik Walut</p>
         </header>
-        <div class="bar d-flex align-items-center justify-content-center">
+        <section class="bar d-flex align-items-center justify-content-center">
           <div
             class="bar__button d-flex align-items-center justify-content-center"
           >
@@ -45,12 +47,17 @@
             class="bar__button d-flex align-items-center justify-content-center"
           >
             <p class="bar__button-paragraph">CHF</p>
-          </div>
         </div>
-        <div class="input__container d-flex align-items-center justify-content-center">
+      </section>
+        <section class="input__container d-flex align-items-center justify-content-center">
           <input placeholder="Wpisz kwotę" id="input" class="input" inputmode="numeric" type="number">
-          
-        </div>
+          <div class="input__button d-flex align-items-center justify-content-center"></div>
+        </section>
+        <section class="count__container d-flex align-items-center justify-content-center">
+          <div class="count__button d-flex align-items-center justify-content-center">
+            <p class="count__paragraph">PRZELICZ</p>
+          </div>
+        </section>
       </div>
     </div>
     <script src="JS/script.js" defer></script>

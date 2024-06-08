@@ -12,3 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
+  const countButton = document.querySelector('.count__button');
+  countButton.addEventListener('click', () =>{
+    const currency = document.querySelector('.bar__button--active');
+    
+  })

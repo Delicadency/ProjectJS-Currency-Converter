@@ -161,6 +161,7 @@ body {
 .output__paragraph--value {
   height: 10vh;
   font-size: 3.2rem;
+  font-weight: 200;
   color: var(--text);
   margin: 0;
 }

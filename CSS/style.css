@@ -97,6 +97,10 @@ body {
   font-size: 1.2rem;
   margin: 0;
 }
+.section__container{
+  width: 42vh;
+  height:30vh;
+}
 .input__container {
   width: 36vh;
   height: 7vh;
@@ -107,7 +111,6 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
   margin: 2vh 0;
 }
-
 .input {
   width: 33vh;
   height: 6.5hv;
@@ -134,8 +137,8 @@ body {
 }
 .count__container {
   width: 19vh;
-  height: 6vh;
-  margin: 4vh 0;
+  height: 8vh;
+  margin: 2vh 0;
 }
 .count__button {
   width: 23.4vh;

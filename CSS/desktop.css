@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   :root {
     font-size: 42px;
   }
@@ -6,14 +6,16 @@
     background-color: var(--background);
     line-height: 1.33;
   }
+
   .main__container {
-    display: flex;
+    align-items: center;
     justify-content: center;
   }
   .project-body__container {
     width: 1024px;
     height: 600px;
     border-radius: 20px;
+    transform: translateY(-100px);
   }
   .project-body__container--light {
     width: 1024px;
@@ -82,5 +84,20 @@
   }
   .count__paragraph {
     font-size: 42px;
+  }
+  .output__container {
+    width: 700px;
+    height: 125px;
+    margin: 60px 110px;
+  }
+  .output__paragraph--value {
+    height: 104px;
+    font-size: 96px;
+  }
+  .output__paragraph--currency {
+    height: 70px;
+    font-size: 44px;
+    margin: 0 10px;
+    transform: translateY(10px);
   }
 }

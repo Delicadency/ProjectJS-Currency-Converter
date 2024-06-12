@@ -20,4 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const valueInput = document.querySelector('.input');
     const amount = parseFloat(valueInput.value);
     const apiURL = `https://api.nbp.pl/api/exchangerates/rates/a/${currency}/?format=json`;
+
+    if (!currency || isNaN(amount)) {
+        alert('Wybierz walutę i wprowadź poprawną kwotę.');
+return;
+    } 
+    fetch(apiURL)
+    .then(response => response.json())
+    .then(data => {
+        const rate = data.rates[0]?.mid;
+        const convertedValue = (rate * amount).toFixed(2);
+        document.querySelector('.output__paragraph--value').textContent = convertedValue;
+    })
+    .catch (error => {
+        console.error ('Błąd pobierania danych z API: ', error);
+        alert ('Wystąpił błąd podczas pobieranioa danych. Spróbuj ponownie później.')
+    })
   })

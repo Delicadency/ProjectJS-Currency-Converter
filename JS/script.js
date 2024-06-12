@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const countButton = document.querySelector('.count__button');
   countButton.addEventListener('click', () =>{
-    const currency = document.querySelector('.bar__button--active');
-    
+    const currencyButton = document.querySelector('.bar__button--active');
+    const currency = currencyButton ? currencyButton.querySelector('p').id : null;
+    const valueInput = document.querySelector('.input');
+    const amount = parseFloat(valueInput.value);
+    const apiURL = `https://api.nbp.pl/api/exchangerates/rates/a/${currency}/?format=json`;
   })

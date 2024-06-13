@@ -11,18 +11,15 @@
   font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
 }
-
 body {
   line-height: 2.1vh;
   background-color: var(--text);
   color: var(--light);
 }
-
 .main__container {
   width: 100%;
   height: 100vh;
 }
-
 .project-body__container--light {
   width: 100%;
   height: 100vh;
@@ -35,27 +32,35 @@ body {
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
-
+.project-body__container--spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  z-index: 1000;
+}
 .project-body__container {
   width: 100%;
   height: 75vh;
   background-color: var(--primary);
   border-radius: 0 0 2vh 2vh;
   position: absolute;
-}
 
+}
+.spinner {
+  justify-self: center;
+  position: absolute;
+  color: var(--secondary) !important;
+}
 .header__container {
   width: 36vh;
   height: 12vh;
   margin-top: 10vh;
 }
-
 .header__logo {
   width: 9vh;
   height: 9.5vh;
   margin: 1vh;
 }
-
 .header__paragraph {
   width: 20vh;
   display: block;
@@ -65,13 +70,11 @@ body {
   line-height: 1.33;
   padding-top: 1.5vh;
 }
-
 .bar {
   width: 42vh;
   height: 5.5vh;
   margin: 9vh 0;
 }
-
 .bar__button {
   width: 13.8vh;
   height: 5vh;
@@ -80,12 +83,10 @@ body {
   border-width: 0.3vh 0;
   border-style: solid;
 }
-
 .bar__button:first-of-type {
   border-radius: 2vh 0 0 2vh;
   border-width: 0.3vh 0 0.3vh 0.3vh;
 }
-
 .bar__button:last-of-type {
   border-radius: 0 2vh 2vh 0;
   border-width: 0.3vh 0.3vh 0.3vh 0;
@@ -97,9 +98,9 @@ body {
   font-size: 1.2rem;
   margin: 0;
 }
-.section__container{
+.section__container {
   width: 42vh;
-  height:30vh;
+  height: 30vh;
 }
 .input__container {
   width: 36vh;

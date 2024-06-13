@@ -25,7 +25,17 @@ countButton.addEventListener("click", () => {
     alert("Wybierz walutę i wprowadź poprawną kwotę.");
     return;
   }
-
+  const spinnerContainer = document.querySelector("#spinnerContainer");
+  spinnerContainer.classList.add(
+    "d-flex",
+    "justify-content-center",
+    "align-items-center",
+    "project-body__container--spinner"
+  );
+  const spinner = document.createElement("div");
+  spinner.classList.add("spinner-border", "spinner", "text-light");
+  spinner.setAttribute("role", "status");
+  spinnerContainer.appendChild(spinner);
   fetch(apiURL)
     .then((response) => response.json())
     .then((data) => {
@@ -33,9 +43,13 @@ countButton.addEventListener("click", () => {
       const convertedValue = (rate * amount).toFixed(2);
       document.querySelector(".output__paragraph--value").textContent =
         convertedValue;
+      spinner.remove();
+      spinnerContainer.removeAttribute("class");
     })
     .catch((error) => {
       console.error("Błąd pobierania danych z API: ", error);
+      spinner.remove();
+      spinnerContainer.removeAttribute("class");
       alert(
         "Wystąpił błąd podczas pobierania danych. Spróbuj ponownie później."
       );

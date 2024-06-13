@@ -44,7 +44,6 @@ body {
   background-color: var(--primary);
   border-radius: 0 0 2vh 2vh;
   position: absolute;
-
 }
 .spinner {
   justify-self: center;

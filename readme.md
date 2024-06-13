@@ -13,7 +13,7 @@ And this is my design:
 Responsive website for performing simple currency conversions from USD, EUR, and CHF to PLN, featuring vibrant, intense colors and based on Bootstrap. Created for a project assignment at Future Collars bootcamp.
 
 Check out the project:
-![figma](img/figma.png) ![figma-link](https://www.figma.com/design/0Is0CwhtAsAHodW0j7sdsi/Currency-Converter?t=hYJLrlm7cOHsGM7x-1)<br>
-![netlify](img/netlify.png) ![netlify-link](https://to-pln-currency-converter.netlify.app/)
+![figma](img/figma.png) [Figma](https://www.figma.com/design/0Is0CwhtAsAHodW0j7sdsi/Currency-Converter?t=hYJLrlm7cOHsGM7x-1)<br>
+![netlify](img/netlify.png) [Netlify](https://to-pln-currency-converter.netlify.app/)
 
 </center>

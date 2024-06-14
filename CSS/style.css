@@ -37,6 +37,7 @@ body {
   height: 2.5rem;
   position: absolute;
   z-index: 1000;
+  transform: translateY(67vh);
 }
 .project-body__container {
   width: 100%;

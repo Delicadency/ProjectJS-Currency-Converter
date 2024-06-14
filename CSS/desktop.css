@@ -23,6 +23,9 @@
     border-radius: 20px;
     border: 7px solid transparent;
   }
+  .project-body__container--spinner {
+    transform: translateY(-55px);
+  }
   .header__container {
     width: 832px;
     height: 90px;

@@ -1,5 +1,5 @@
+const buttons = document.querySelectorAll(".bar__button");
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".bar__button");
   buttons.forEach((button, index) => {
     button.addEventListener("click", function () {
       buttons.forEach((btn) => {
@@ -55,10 +55,9 @@ countButton.addEventListener("click", () => {
       );
     });
 });
-const currencyButtons = document.querySelectorAll(".bar__button");
-  currencyButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      document.querySelector(".output__paragraph--value").textContent = "0.00";
-    });
-  });
 
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelector(".output__paragraph--value").textContent = "0.00";
+  });
+});

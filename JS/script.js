@@ -44,19 +44,19 @@ countButton.addEventListener("click", () => {
     return;
   }
   const { spinner, spinnerContainer } = createSpinner();
-
   fetch(apiURL)
     .then((response) => response.json())
     .then((data) => {
-      const rate = data.rates[0]?.mid;
-      if (!rate) {
+      const rate = data?.rates?.[0]?.mid;
+      if (rate) {
+        const convertedValue = (rate * amount).toFixed(2);
+        document.querySelector(".output__paragraph--value").textContent =
+          convertedValue;
+        spinner.remove();
+        spinnerContainer.removeAttribute("class");
+      } else {
         alert("Nie można pobrać kursu dla wybranej waluty.");
       }
-      const convertedValue = (rate * amount).toFixed(2);
-      document.querySelector(".output__paragraph--value").textContent =
-        convertedValue;
-      spinner.remove();
-      spinnerContainer.removeAttribute("class");
     })
     .catch((error) => {
       console.error("Błąd pobierania danych z API: ", error);

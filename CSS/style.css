@@ -8,7 +8,6 @@
   --accent: #e8504f;
   font-size: 2vh;
   scroll-behavior: smooth;
-  font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
 }
 body {
@@ -150,13 +149,13 @@ body {
   border-width: 0.3vh 0;
   border-style: solid;
   border-radius: 2vh;
-}
-.count__paragraph {
   font-size: 1.2rem;
+  color: var(--light);
   text-align: center;
   margin: 0;
   letter-spacing: 0.8px;
 }
+
 .output__container {
   width: 43vh;
   height: 12vh;

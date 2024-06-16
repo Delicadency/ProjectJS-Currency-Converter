@@ -2,15 +2,15 @@ Using the free API from the NBP website (https://api.nbp.pl/?ref=public-apis), a
 
 This is how the example interface looks like:
 
-![example](img/example.png)
+![example](readme/img/example.png)
 
 And this is my design:
 
-![mobile](img/mobile.png)
-![desktop](img/desktop.png)
+![mobile](readme/img/mobile.png)
+![desktop](readme/img/desktop.png)
 
 Responsive website for performing simple currency conversions from USD, EUR, and CHF to PLN, featuring vibrant, intense colors and based on Bootstrap. Created for a project assignment at Future Collars bootcamp.
 
 Check out the project:<br><br>
-![figma](img/figma.png) [Figma](https://www.figma.com/design/0Is0CwhtAsAHodW0j7sdsi/Currency-Converter?t=hYJLrlm7cOHsGM7x-1)<br>
-![netlify](img/netlify.png) [Netlify](https://to-pln-currency-converter.netlify.app/)
+![figma](readme/img/figma.png) [Figma](https://www.figma.com/design/0Is0CwhtAsAHodW0j7sdsi/Currency-Converter?t=hYJLrlm7cOHsGM7x-1)<br>
+![netlify](readme/img/netlify.png) [Netlify](https://to-pln-currency-converter.netlify.app/)

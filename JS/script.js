@@ -39,7 +39,7 @@ countButton.addEventListener("click", () => {
   const valueInput = document.querySelector(".input");
   const amount = parseFloat(valueInput.value);
   const apiURL = `https://api.nbp.pl/api/exchangerates/rates/a/${currency}/?format=json`;
-  if (!currency || isNaN(amount)) {
+  if (!currency || isNaN(amount) || amount <= 0.009) {
     alert("Wybierz walutę i wprowadź poprawną kwotę.");
     return;
   }
